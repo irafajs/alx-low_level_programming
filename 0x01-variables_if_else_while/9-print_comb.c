@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int a = 0;
+	int a = 0, b;
 	int sep = 0, sep1 = 0;
 
 	sep = ',';
@@ -16,10 +16,14 @@ int main(void)
 
 	while (a < 10)
 	{
-		putchar('0' + a);
+		b = a % 10;
+		putchar('0' + b);
 		++a;
-		putchar(sep);
-		putchar(sep1);
+		if (a != 10)
+		{
+			putchar(sep);
+			putchar(sep1);
+		}
 	}
 	putchar('\n');
 	return (0);
