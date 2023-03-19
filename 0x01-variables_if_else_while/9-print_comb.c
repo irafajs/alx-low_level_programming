@@ -10,6 +10,7 @@ int main(void)
 {
 	int a = 0;
 	int sep = 0, sep1 = 0;
+
 	sep = ',';
 	sep1 = ' ';
 
