@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
-*print all letters-user header
+*main - Entry point
+*
+* description : 'print a-z alphabet'
 *
 *Return: Always 0 (Success)
 */
 
-void print_alphabet(void)
-
+void print_alphabet(void)/*print a-z alphabet*/
 {
 	char AL;
 
