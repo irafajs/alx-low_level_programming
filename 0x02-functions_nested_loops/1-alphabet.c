@@ -1,7 +1,8 @@
-#include <stdio.h>
+#include "main.h"
+void print_alphabet(void);
 
 /**
-*main - Entry point
+*print all letters-user header
 *
 *Return: Always 0 (Success)
 */
@@ -12,8 +13,8 @@ int main(void)
 
 	for (AL = 'a'; AL <= 'z'; AL++)
 	{
-		putchar(AL);
+		_putchar(AL);
 	}
 	putchar('\n');
-	return (0);
+	return(0);
 }
