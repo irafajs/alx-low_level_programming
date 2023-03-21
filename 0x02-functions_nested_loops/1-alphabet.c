@@ -1,5 +1,4 @@
 #include "main.h"
-void print_alphabet(void);
 
 /**
 *print all letters-user header
@@ -7,14 +6,14 @@ void print_alphabet(void);
 *Return: Always 0 (Success)
 */
 
-int main(void)
+void print_alphabet(void)
+
 {
-	int AL;
+	char AL;
 
 	for (AL = 'a'; AL <= 'z'; AL++)
 	{
 		_putchar(AL);
 	}
 	putchar('\n');
-	return(0);
 }
