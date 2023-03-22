@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-*main - Entry point
+*print_alphabet_10 - _putchar letter a-z
 *
-*Return: Always 0 (Success)
+*Description: Code print a-z letter 10 times
+*followed by a line
 */
-
 void print_alphabet_x10(void)
 {
 	int c = 0;
@@ -15,9 +15,9 @@ void print_alphabet_x10(void)
 	{
 		for (p = 'a'; p <= 'z'; p++)
 		{
-			printf("%c", p);
+			_putchar(p);
 		}
-		printf("\n");
+		_putchar('\n');
 		c++;
 	}
 }
