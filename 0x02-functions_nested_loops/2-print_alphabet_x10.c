@@ -3,8 +3,7 @@
 /**
 *print_alphabet_10 - _putchar letter a-z
 *
-*Description: Code print a-z letter 10 times
-*followed by a line
+*Return: x10 a-z
 */
 void print_alphabet_x10(void)
 {
