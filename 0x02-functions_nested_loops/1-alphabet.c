@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*main - Entry point
+*print_alphabet - Entry point
 *
-* description : 'print a-z alphabet'
+*description : 'print a-z alphabet'
 *
 *Return: Always 0 (Success)
 */
