@@ -11,7 +11,7 @@
 
 void positive_or_negative(int i)
 {
-	int a = 98;
+	int a = 0;
 
 	if (a > 0)
 	{
