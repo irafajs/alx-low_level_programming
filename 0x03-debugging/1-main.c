@@ -17,7 +17,7 @@ int main(void)
 *{
 *putchar(i);
 *
-*@\\o/\n : return char
+*\\o/\n" - remove line to end infinite counting
 */
 	printf("Infinite loop avoided! \\o/\n");
 	return (0);
