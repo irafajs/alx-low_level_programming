@@ -9,4 +9,5 @@ void print_line(int n)
 		i++;
 		_putchar('_');
 	}
+	_putchar('\n');
 }
