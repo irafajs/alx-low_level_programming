@@ -12,6 +12,9 @@ void print_rev(char *s);
 void rev_string(char *s);
 void puts2(char *str);
 void puts_half(char *str);
+<<<<<<< HEAD
 void print_array(int *a, int n);
+=======
+>>>>>>> 0ff96cb4c07c08a1163655fea9e65109c3a0b837
 
 #endif
