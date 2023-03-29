@@ -1,11 +1,16 @@
+#include <string.h>
+/**
+ *_strcmp - compare s1 and s2
+ *@s1: passed par
+ *@s2: passed par 2
+ *
+ * Return: 0 at success
+ */
+
 int _strcmp(char *s1, char *s2)
 {
-	int a;
-	int b;
+	char r;
 
-	for (a = 0; s1[a] != '\0'; a++)
-	{}
-	for (b = 0; s2[b] != '\0'; b++)
-	{}
-	return (strcmp(a, b);
+	r = strcmp(s1, s2);
+	return (r);
 }
