@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *_strncpy - output a copy of the string src to dest
  *@dest: passed param dest
@@ -15,9 +16,8 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[a] = src[a];
 	}
-	while (a < n)
+	for (; a < n; a++)
 	{
-		a++;
 		dest[a] = '\0';
 	}
 	return (dest);
