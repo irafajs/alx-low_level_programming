@@ -5,5 +5,4 @@ int _atoi(char *s)
 {
 	char *p;
 	strtol(s, &p, 10);
-	return;
 }
