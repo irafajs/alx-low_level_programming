@@ -6,20 +6,20 @@
  */
 char *leet(char *s)
 {
-	char alpArr[] = "a4A4e3e3o0O0t7t71L1";
-	int i;
-	int j;
+	char *h = s;
+	char m[] = {'a', 'e', 'o', 't', 'l'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	char l[] = {4, 3, 0, 7, 1};
+	int k;
+
+	while (*s)
 	{
-		for (j = 0; alpArr[j] != '\0'; j++)
+		for (k = 0; k < 5; k++)
 		{
-			if (s[i] == alpArr[j])
-			{
-				s[i] = alpArr[j + 1];
-				break;
-			}
+			if (*s == m[k] || *s == m[k] - 32)
+				*s = l[k] + '0';
 		}
+		s++;
 	}
-	return (s);
+	return (h);
 }
