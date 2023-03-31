@@ -4,6 +4,7 @@
  *
  *Return: 0 at success
  */
+
 char *rot13(char *s)
 {
 	char see[100] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
