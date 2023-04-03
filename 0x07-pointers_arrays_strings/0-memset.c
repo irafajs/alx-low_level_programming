@@ -1,4 +1,5 @@
 #include <string.h>
+#include "main.h"
 
 /**
  * _memset - output memset of a string
@@ -17,4 +18,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[buf] = b;
 	}
 	return (s);
+
 }
