@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * main - output the passed argument in counted number
  * @argc: passed argument counted in #
