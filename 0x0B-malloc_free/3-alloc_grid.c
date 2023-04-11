@@ -1,15 +1,23 @@
 #include "main.h"
 
+/**
+ * alloc_grid - output a grid of 2 d array
+ * @width: define with of the array
+ * @height: define height of the array
+ *
+ * Return: 0 at success and NULL at fail
+ */
+
 int **alloc_grid(int width, int height)
 {
 	int a, b;
 	int **pt;
 
-	if (width <= 0 || height <=0)
+	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	pt = (int **) malloc(sizeof(int*) * height);
+	pt = (int **) malloc(sizeof(int *) * height);
 	if (pt == NULL)
 	{
 		return (NULL);
