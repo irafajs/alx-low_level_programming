@@ -13,7 +13,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	while (str[b])
 
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	p = malloc(sizeof(char) * b + 1);
 	if (p == 0)
 	{
-		return (0);
+		return (NULL);
 	}
 	for (c = 0; c <= b; c++)
 	{
