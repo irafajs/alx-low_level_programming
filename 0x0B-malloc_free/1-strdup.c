@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (str[b])
+	while (*(str + 1))
 
 	{
 		b++;
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	}
 	for (c = 0; c <= b; c++)
 	{
-		p[c] = str[c];
+		*(p + 1) = *(str + 1);
 	}
 	return (p);
 }
