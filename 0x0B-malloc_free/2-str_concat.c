@@ -16,7 +16,8 @@ char *str_concat(char *s1, char *s2)
 	a = u = k = 0;
 	if (s1 == NULL || s2 == NULL)
 	{
-		s1 = s2 = v;
+		s1 = v;
+		s2 = v;
 	}
 	while (s1[a] != '\0')
 	{
