@@ -47,8 +47,8 @@ int main(void)
 	printf("\n");
 	grid[0][3] = 98;
 	grid[3][4] = 402;
-	print_grid(grid, 6, 4);
-	free_grid(grid, 4);
+	print_grid(grid, 20, 10);
+	free_grid(grid, 10);
 	return (0);
 }
 
