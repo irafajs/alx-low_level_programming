@@ -36,14 +36,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		for (ns = 0; s2[ns] != '\0'; ns++)
 		{
-			printf("%c\n", s2[ns]);
+			ab[ns] = s2[ns];
 		}
 	}
 	if (n <= strlen(s2))
 	{
 		for (ns = 0; ns <= n; ns++)
 		{
-			printf("%c", s2[ns]);
+			ab[ns] = s2[ns];
 		}
 	}
 	return (ab);
