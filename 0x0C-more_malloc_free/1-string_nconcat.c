@@ -15,6 +15,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, ns;
 	char b = strlen(s1) + strlen(s2);
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	ab = malloc(sizeof(b) * 6);
 	if (ab == NULL)
 	{
@@ -37,10 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			printf("%c", s2[ns]);
 		}
-	}
-	if (s2 == NULL)
-	{
-		printf("%c", s2[0]);
 	}
 	return (ab);
 }
