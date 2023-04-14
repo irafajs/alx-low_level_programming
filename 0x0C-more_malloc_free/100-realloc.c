@@ -1,45 +1,35 @@
 #include "main.h"
 
-void *_realloc(__attribute__ ((unused)) void *ptr, unsigned int old_size, unsigned int new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	unsigned int a, b;
-	int *ns;
+	unsigned int b;
+	char *ns;
+	char *musa = ptr;
 
-	ns = malloc(sizeof(int) * old_size);
-	if(ns == NULL)
-	{
-		return (NULL);
-	}
-	for (a = 0; a < old_size; a++)
-	{
-		ns[a] = old_size;
-	}
-	ns = realloc(ns, sizeof(int) * new_size);
-	if( ns == NULL)
-	{
-		return (NULL);
-	}
-	if (new_size > old_size)
-	{
-		exit(1);
-	}
 	if (new_size == old_size)
 	{
+		return (ptr);
+	}
+	if (ptr == NULL)
+	{
+		ns = malloc(new_size);
 		return (ns);
 	}
-	if (ns == NULL)
+	if (new_size == 0)
 	{
-		return (ns);
-	}
-	if (new_size == 0 && ns != NULL)
-	{
-		free(ns);
+		free(ptr);
 		return (NULL);
 	}
-	for (b = 0; b < new_size; b++)
+	ns = malloc(new_size);
+	if (ns == NULL)
 	{
-		ns[b] = new_size;
+		return (NULL);
 	}
+	for (b = 0; b < old_size; b++)
+	{
+		ns[b] = musa[b];
+	}
+	free(musa);
 	return (0);
 }
 
