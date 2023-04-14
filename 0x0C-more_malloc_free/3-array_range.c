@@ -10,7 +10,9 @@
 int *array_range(int min, int max)
 {
 	int *ab;
-	int a, p, c = 0;
+	int c = 0;
+	int a, p;
+
 
 	if (min > max)
 	{
@@ -22,7 +24,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	for (a = min; a < max; a++)
+	for (a = min; a <= max; a++)
 	{
 		ab[c] = a;
 		c++;
