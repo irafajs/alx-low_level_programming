@@ -2,5 +2,5 @@
 #define _FUNCTION_LIKE_MACRO
 #include <stdlib.h>
 #include <inttypes.h>
-#define ABS(x) abs(x)
+#define ABS(x) ((x) < 0 ? (-x) : (x))
 #endif
