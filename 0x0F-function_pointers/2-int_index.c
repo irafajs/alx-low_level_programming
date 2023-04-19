@@ -12,14 +12,14 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (!array || !cmp)
 	{
-		return(0);
+		return (0);
 	}
 	for (a = 0; a < size; a++)
 	{
 		if (cmp(array[a]))
 		{
-			return(a);
+			return (a);
 		}
 	}
-	return(1);
+	return (1);
 }
