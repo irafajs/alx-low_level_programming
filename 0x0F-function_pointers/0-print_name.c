@@ -1,3 +1,4 @@
+
 /**
  * print_name - output the char pointed by a function
  * @name: passed argumenr
