@@ -1,5 +1,12 @@
 #include "lists.h"
 
+/**
+ * add_node_end - write out end of a node
+ * @head: passed arg as head node
+ * @str: passed arg as pointer
+ *
+ * Return: a pinter at success
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	int a = 0;
@@ -17,7 +24,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->str = strdup(str);
 	new->len = a;
 	new->next = NULL;
-	if(strdup(str) == NULL)
+	if (strdup(str) == NULL)
 	{
 		free(new);
 		return (NULL);

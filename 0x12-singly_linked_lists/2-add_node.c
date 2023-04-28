@@ -4,7 +4,7 @@
  * _adjcfunc - calculate the stringth lenght
  * @k: passed argument as pointer
  *
- * Return : int at success
+ * Return: int at success
  */
 int _adjcfunc(const char *k)
 {
