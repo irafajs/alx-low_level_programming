@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * free_listint_te - free the memory allocated by head
+ * @head: passed arg as a pointer to a pinter
+ *
+ * Return: nothing
+ */
 void free_listint2(listint_t **head)
 {
 	listint_t *trav = NULL;
