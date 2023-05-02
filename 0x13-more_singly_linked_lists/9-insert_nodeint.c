@@ -35,10 +35,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		temp->next = trav->next;
 		trav->next = temp;
+		return (temp);
 	}
-	else if (idx <= 0)
+	if (idx <= 0)
 	{
 		return (NULL);
 	}
-	return (temp);
+	return (NULL);
 }
