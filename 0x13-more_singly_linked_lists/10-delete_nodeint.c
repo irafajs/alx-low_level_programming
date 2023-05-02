@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * nodeint_at_index - delete a node at define position
+ * delete_nodeint_at_index - delete a node at define position
  * @head: passed arg as a double pointer
  * @index: passed arg as a index to pointer to a node to delete
  *
