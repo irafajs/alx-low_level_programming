@@ -16,13 +16,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	trav = *head;
 	if (*head == NULL)
 	{
-		return (0);
+		return (-1);
 	}
 	if (index == 0)
 	{
 		*head = trav->next;
 		free(trav);
-		return (0);
+		return (1);
 	}
 	while (counter != index)
 	{
@@ -36,5 +36,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		return (-1);
 	}
-	return (0);
+	return (1);
 }
