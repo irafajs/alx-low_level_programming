@@ -21,9 +21,14 @@ int main(void)
 	add_nodeint_end(&head, 98);
 	add_nodeint_end(&head, 402);
 	add_nodeint_end(&head, 1024);
+	add_nodeint_end(&head, 5);
+	add_nodeint_end(&head, 6);
+	add_nodeint_end(&head, 7);
+	add_nodeint_end(&head, 8);
+	add_nodeint_end(&head, 9);
 	print_listint(head);
 	printf("-----------------\n");
-	delete_nodeint_at_index(&head, 5);
+	delete_nodeint_at_index(&head, 10);
 	print_listint(head);
 	printf("-----------------\n");
 	delete_nodeint_at_index(&head, 0);

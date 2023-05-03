@@ -1,15 +1,20 @@
 #include "lists.h"
 
+/**
+ * reverse_listint - write out the list in reverse order
+ * @head: passed arg as a double arg
+ *
+ * Return: return a pointer at success
+ */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *temp;
+	listint_t *temp = NULL;
 	listint_t *trav = NULL;
-	
-	temp = *head;
+
 	while (*head != NULL)
 	{
-		trav = *head.next;
-		temp->next = temp;
+		trav = (*head)->next;
+		(*head)->next = temp;
 		temp = *head;
 		*head = trav;
 	}
