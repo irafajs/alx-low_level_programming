@@ -1,19 +1,26 @@
 #include "lists.h"
 
+/**
+ * print_listint_safe - write out the list of a node
+ * @head: passed arg as a pointer
+ *
+ * Return: number of the node
+ */
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *trav;
-	int c;
+	int c = 8;
 
-	if (head == NULL)
-	{
-		exit (98);
-	}
 	trav = head;
-	while (trav != NULL)
+	if (trav == NULL)
 	{
+		return (0);
+	}
+	while (c != 0)
+	{
+		printf("%d\n", trav->n);
 		trav = trav->next;
-		c++;
+		c--;
 	}
 	return (c);
 }
