@@ -18,7 +18,7 @@ size_t print_listint_safe(const listint_t *head)
 	}
 	while (c != 0)
 	{
-		printf("%d\n", trav->n);
+		printf("[%p] %d\n",(void *) head, trav->n);
 		trav = trav->next;
 		c--;
 	}
