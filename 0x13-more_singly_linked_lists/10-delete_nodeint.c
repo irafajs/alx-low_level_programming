@@ -29,7 +29,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		trav = trav->next;
 		counter++;
 	}
-	printf("exited loop and index = %u\n", counter);
 	if (index > counter)
 	{
 		return (-1);
