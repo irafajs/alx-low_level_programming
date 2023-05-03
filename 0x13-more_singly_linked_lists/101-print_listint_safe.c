@@ -14,11 +14,11 @@ size_t print_listint_safe(const listint_t *head)
 	trav = head;
 	if (trav == NULL)
 	{
-		return (0);
+		exit(98);
 	}
 	while (c != 0)
 	{
-		printf("[%p] %d\n",(void *) head, trav->n);
+		printf("[%p] %d\n", (void *) head, trav->n);
 		trav = trav->next;
 		c--;
 	}
