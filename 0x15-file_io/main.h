@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <fcntl.h>
+#include <sys/stat.h>
 
 #define B_SIZE 1024
 
