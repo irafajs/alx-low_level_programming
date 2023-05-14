@@ -19,11 +19,14 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	while (text_content[c_count] != '\0')
 	{
-	/*	faw = write(fao, text_content, c_count);*/
 		c_count++;
 	}
 	faw = write(fao, text_content, c_count);
 	if (faw == 0)
+	{
+		return (-1);
+	}
+	if (text_content == NULL && fao != 0)
 	{
 		return (1);
 	}
