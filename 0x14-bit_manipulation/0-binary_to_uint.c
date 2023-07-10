@@ -9,7 +9,6 @@
 unsigned int binary_to_uint(const char *b)
 {
 	size_t converted = 0;
-	size_t count = 0;
 	size_t last_num;
 
 	if (b == NULL)
@@ -24,7 +23,6 @@ unsigned int binary_to_uint(const char *b)
 		}
 		last_num = *b - '0';
 		converted = (converted * 2) + last_num;
-		count++;
 		b++;
 	}
 	return (converted);
