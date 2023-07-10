@@ -12,6 +12,7 @@ void print_binary(unsigned long int n)
 	size_t op_res;
 	int  finess;
 	size_t one = 1;
+	unsigned int result;
 
 	if (n == 0)
 	{
@@ -25,7 +26,8 @@ void print_binary(unsigned long int n)
 	{
 		if ((n & op_res) != 0 || !finess)
 		{
-			printf("%d", (n & op_res) != 0);
+			result = (n & op_res) != 0;
+			_putchar ('0' + result);
 			finess = 0;
 		}
 		op_res >>= 1;
