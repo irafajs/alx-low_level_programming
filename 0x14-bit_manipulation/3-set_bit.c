@@ -16,7 +16,11 @@ int set_bit(unsigned long int *n, unsigned int index)
 	{
 		return (-1);
 	}
+	else
+	{
 	def_bit = one << index;
 	*n = *n | def_bit;
-		return (0);
+	return (1);
+	}
+	return (0);
 }
