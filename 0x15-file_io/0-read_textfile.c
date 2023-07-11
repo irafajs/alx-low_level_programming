@@ -13,8 +13,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char r_store[1024];
 	ssize_t read_c;
 
+	if (filename == NULL)
+	{
+		return (0);
+	}
 	fd = open(filename, O_RDONLY);
-	if (fd == -1 || filename == NULL)
+	if (fd == -1)
 	{
 		return (0);
 	}
