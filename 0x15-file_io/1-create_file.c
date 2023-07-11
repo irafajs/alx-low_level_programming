@@ -11,7 +11,6 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd;
 	ssize_t w_res;
-	char *buffer[1024];
 
 	if (filename == NULL)
 	{
@@ -22,11 +21,18 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	w_res = write(fd, buffer, sizeof(text_content));
-	if (w_res == -1)
+	if (text_content != NULL)
+	{
+		w_res = write(fd, text_content, strlen(text_content));
+		if (w_res == -1)
+		{
+			close(fd);
+			return (-1);
+		}
+	}
+	if (close(fd) == -1)
 	{
 		return (-1);
 	}
-	close(fd);
 	return (1);
 }
