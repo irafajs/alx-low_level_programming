@@ -28,7 +28,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	dprintf(1, "%.*s\n", (int)read_c, r_store);
+	if (read_c != write(STDOUT_FILENO, r_store, read_c))
+	{
+		close(fd);
+		return (0);
+	}
 	close(fd);
 	return (read_c);
 }
