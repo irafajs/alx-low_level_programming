@@ -9,7 +9,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char fd;
+	int fd;
 	char r_store[1024];
 	ssize_t read_c;
 
@@ -33,6 +33,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	close(fd);
+	if (close(fd) == -1)
+	{
+		return (0);
+	}
 	return (read_c);
 }
