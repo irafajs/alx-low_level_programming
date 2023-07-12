@@ -24,13 +24,14 @@ int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
 	ssize_t bytes_read, bytes_written;
-	char buffer[BUFFER_SIZE];
+	char *buffer;
 
 	if (argc != 3)
 	{
 		print_error_exit(97, "Usage: cp file_from file_to");
 	}
 	fd_from = open(argv[1], O_RDONLY);
+	buffer = malloc(fd_from);
 	if (fd_from == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -71,5 +72,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
+	free(buffer);
 	return (0);
 }
