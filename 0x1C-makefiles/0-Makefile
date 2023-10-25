@@ -1,0 +1,5 @@
+#firslt line of make file
+CC=gcc
+#ino flags needed
+all:
+	$(CC) main.c school.c -o school
